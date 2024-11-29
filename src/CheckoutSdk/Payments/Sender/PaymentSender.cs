@@ -6,6 +6,8 @@
 
         public string Reference { get; set; }
 
+        public PaymentSender() { }
+
         public PaymentSender(PaymentSenderType type)
         {
             Type = type;

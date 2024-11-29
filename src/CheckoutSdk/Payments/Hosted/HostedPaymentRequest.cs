@@ -42,7 +42,7 @@ namespace Checkout.Payments.Hosted
         
         public PaymentRetryRequest CustomerRetry { get; set; }
         
-        public PaymentSender Sender { get; set; }
+        public PaymentIndividualSender Sender { get; set; }
 
         public string SuccessUrl { get; set; }
 
@@ -69,5 +69,7 @@ namespace Checkout.Payments.Hosted
         public string ProcessingChannelId { get; set; }
         
         public IList<AmountAllocations> AmountAllocations { get; set; }
+        public PaymentInstruction Instruction { get; set; }
+
     }
 }
